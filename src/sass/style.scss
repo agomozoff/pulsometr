@@ -4,6 +4,12 @@
 	font-family: Museo Sans, sans-serif;
 }
 
+h1,
+h2,
+h3 {
+	margin-bottom: 0;
+}
+
 .container {
 	max-width: 942px;
 	margin: 0 auto;
@@ -12,3 +18,4 @@
 @import 'blocks/promo';
 @import 'blocks/header';
 @import 'blocks/buttons';
+@import 'blocks/advantages';
