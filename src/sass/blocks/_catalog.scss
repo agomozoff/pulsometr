@@ -1,0 +1,156 @@
+.catalog {
+	padding: 50px 0 53px 0;
+	&__tabs {
+		list-style-type: none;
+		width: 684px;
+		margin: 69px auto 0 auto;
+		display: flex;
+		justify-content: space-between;
+		padding-inline-start: 0;
+	}
+	&__tab {
+		width: 220px;
+		height: 50px;
+		border: 2px solid #d0d0d0;
+		font-size: 18px;
+		font-weight: 500;
+		text-transform: uppercase;
+		color: #6b6b6b;
+		text-align: center;
+		line-height: 50px; //*Для выравнивания текста в табе по вертикали
+		transform: skewX(-25deg);
+		cursor: pointer;
+		transition: 0.5s all;
+		&:hover {
+			box-shadow: 3px 3px 20px $main-color;
+			border: none;
+		}
+		div {
+			transform: skewX(25deg);
+		}
+		&_active {
+			background-color: #c70101;
+			color: #ffffff;
+			border: none;
+		}
+	}
+	&__content {
+		margin-top: 60px;
+		display: none;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		&_active {
+			display: flex;
+		}
+	}
+	&-item {
+		width: 300px;
+		min-height: 440px;
+		border: 2px solid #e8e8e8;
+		padding: 20px 20px 26px 20px;
+		overflow: hidden;
+		margin-bottom: 20px;
+		&__img {
+			max-width: 100%;
+			height: 200px;
+			display: block;
+			margin: 0 auto;
+		}
+		&__subtitle {
+			margin-top: 20px;
+			font-size: 16px;
+			font-weight: 700;
+			line-height: 14px;
+			color: #0d0d0d;
+			text-align: center;
+		}
+		&__descr {
+			margin-top: 16px;
+			font-size: 14px;
+			line-height: 17px;
+			font-weight: 300;
+			color: #0d0d0d;
+			text-align: center;
+		}
+		&__link,
+		&__back {
+			font-size: 14px;
+			line-height: 17px;
+			font-weight: 500;
+			text-decoration: underline;
+			color: $main-color;
+			text-transform: uppercase;
+			display: block;
+			text-align: center;
+			position: absolute;
+			bottom: -31px;
+			left: 50%;
+			transform: translateX(-50%);
+			&:hover {
+				color: $main-color;
+			}
+		}
+		hr {
+			background-color: #e8e8e8;
+			margin: 50px 0 21px 0;
+			border-bottom: none;
+		}
+		&__footer {
+			display: flex;
+			justify-content: space-between;
+		}
+		&__old-price {
+			font-size: 14px;
+			line-height: 17px;
+			font-weight: 300;
+			color: #555555;
+			text-decoration: line-through;
+		}
+		&__price {
+			font-size: 20px;
+			line-height: 24px;
+			font-weight: 700;
+			color: #050505;
+		}
+		&__wrapper {
+			display: flex;
+			width: calc(200% + 22px);
+			transition: 0.5s all;
+			&_active {
+				transform: translateX(calc(-50% - 11px));
+			}
+		}
+		&__content {
+			width: 50%;
+			position: relative;
+		}
+		&__list {
+			width: 50%;
+			margin-left: 22px;
+			position: relative;
+			ul {
+				margin-bottom: 0;
+				padding-inline-start: 0;
+				list-style-type: none;
+				li {
+					font-size: 14px;
+					line-height: 17px;
+					font-weight: 300;
+					color: #555555;
+					margin-bottom: 20px;
+					padding-left: 19px;
+					position: relative;
+					&:before {
+						content: '';
+						position: absolute;
+						left: 0;
+						top: 5px;
+						width: 5px;
+						height: 5px;
+						background-color: $main-color;
+					}
+				}
+			}
+		}
+	}
+}
