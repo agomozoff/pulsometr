@@ -1,0 +1,40 @@
+.feedback {
+	padding: 50px 0 71px 0;
+	&__item {
+		margin-top: 70px;
+		padding-bottom: 50px;
+		display: flex;
+		border-bottom: 1px solid#f6f6f6;
+		&:last-of-type {
+			padding-bottom: 0;
+			border-bottom: none;
+		}
+	}
+	&__img {
+		width: 169px;
+		height: 169px;
+		display: block;
+	}
+	&__text {
+		margin-left: 60px;
+	}
+	&__header {
+		font-size: 18px;
+		line-height: 15px;
+		font-weight: 700;
+		color: #0d0d0d;
+	}
+	&__subheader {
+		font-size: 14px;
+		line-height: 17px;
+		font-weight: 300;
+		color: #646464;
+		margin-top: 10px;
+	}
+	&__descr {
+		font-size: 16px;
+		line-height: 19px;
+		font-weight: 500;
+		color: #0d0d0d;
+	}
+}
